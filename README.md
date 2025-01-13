@@ -111,16 +111,16 @@ Access the API from your browser or with tools like Postman or cURL.
 *URL: /tasks/<id>
 *Example response:
 
-```json
+"json
 {
     “message": ”Task deleted”
 }
-```
-##🧪 Pruebas con Postman
--Descarga e instala Postman desde https://www.postman.com/downloads/.
--Configura las siguientes peticiones en Postman:
--GET /tareas
--POST /tareas con cuerpo JSON para crear una nueva tarea.
--PUT /tareas/<id> con cuerpo JSON para actualizar una tarea.
--DELETE /tareas/<id> para eliminar una tarea.
--Envía las solicitudes y verifica las respuestas.
+"
+## 🧪 Pruebas con Postman
+
+- Configura las siguientes peticiones en Postman:
+- GET /tareas
+- POST /tareas con cuerpo JSON para crear una nueva tarea.
+- PUT /tareas/<id> con cuerpo JSON para actualizar una tarea.
+- DELETE /tareas/<id> para eliminar una tarea.
+- Envía las solicitudes y verifica las respuestas.

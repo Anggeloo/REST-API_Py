@@ -40,78 +40,72 @@ Access the API from your browser or with tools like Postman or cURL.
 **Method**: GET
 **URL**: /tasks
 **Example response**:
-
-"json
+```bash
 [
     {“id”: 1, “title”: “Buy food”, “completed”: false},
     {“id”: 2, “title”: “Call doctor”, “completed”: true}
 ]
-"
+```
 ### 2. Get a task by ID
 **Description**: Return a specific task according to its ID.
 **Method**: GET
 ***URL**: /tasks/<id>
 **Example response**:
-
-
-"json
+```bash
 {
     “id": 1,
     “title": ‘Buy food’,
     “completed": false
 }
-"
+```
 ### 3. Create a new task
 **Description**: Add a new task to the list.
 **Method**: POST
 **URL**: /tasks
 **Body (JSON)**:
-
-"json
+```bash
 {
     “title": ‘New task’,
     “completed": false
 }
-"
+```
 ### Example response:
-
-"json
+```bash
 {
     “id": 3,
     “title": ‘New task’,
     “completed": false
 }
-"
+```
 ### 4. Update a task
 **Description**: Update the data of a specific task.
 **Method**: PUT
 **URL**: /tasks/<id>
 **Body (JSON)**:
-"json
+```bash
 {
     “title": ‘Task updated’,
     “completed": true
 }
-"
+```
 ### Example response:
-
-"json
+```bash
 {
     “id": 1,
     “title": ‘Task updated’,
     “completed": true
 }
-"
+```
 ### 5. Delete a task
 **Description**: Deletes a specific task by its ID.
 **Method**: DELETE
 **URL**: /tasks/<id>
 **Example response**:
-"json
+```bash
 {
     “message": ”Task deleted”
 }
-"
+```
 ## 🧪 Pruebas con Postman
 
 - Configure the following requests in Postman:

@@ -35,12 +35,11 @@ Running on http://127.0.0.1:5000
 Access the API from your browser or with tools like Postman or cURL.
 
 ## 🛠️ Endpoints
-1. Get all tasks
-*Description: Returns a list of all tasks.
-
-*Method: GET
-*URL: /tasks
-*Example response:
+### 1. Get all tasks
+**Description**: Returns a list of all tasks.
+**Method**: GET
+**URL**: /tasks
+**Example response**:
 
 ```json
 [
@@ -48,12 +47,11 @@ Access the API from your browser or with tools like Postman or cURL.
     {“id”: 2, “title”: “Call doctor”, “completed”: true}
 ]
 ```
-2. Get a task by ID
-*Description: Return a specific task according to its ID.
-
-*Method: GET
-*URL: /tasks/<id>
-*Example response:
+### 2. Get a task by ID
+**Description**: Return a specific task according to its ID.
+**Method**: GET
+***URL**: /tasks/<id>
+**Example response**:
 
 ```json
 {
@@ -62,19 +60,18 @@ Access the API from your browser or with tools like Postman or cURL.
     “completed": false
 }
 ```
-3. Create a new task
-*Description: Add a new task to the list.
-
-*Method: POST
-*URL: /tasks
-*Body (JSON):
+### 3. Create a new task
+**Description**: Add a new task to the list.
+**Method**: POST
+**URL**: /tasks
+**Body (JSON)**:
 ```json
 {
     “title": ‘New task’,
     “completed": false
 }
 ```
-*Example response:
+### Example response:
 
 ```json
 {
@@ -83,19 +80,18 @@ Access the API from your browser or with tools like Postman or cURL.
     “completed": false
 }
 ```
-4. Update a task
-*Description: Update the data of a specific task.
-
-*Method: PUT
-*URL: /tasks/<id>
-*Body (JSON):
+### 4. Update a task
+**Description**: Update the data of a specific task.
+**Method**: PUT
+**URL**: /tasks/<id>
+**Body (JSON)**:
 ```json
 {
     “title": ‘Task updated’,
     “completed": true
 }
 ```
-*Example response:
+### Example response:
 
 ```json
 {
@@ -104,23 +100,22 @@ Access the API from your browser or with tools like Postman or cURL.
     “completed": true
 }
 ```
-5. Delete a task
-*Description: Deletes a specific task by its ID.
+### 5. Delete a task
+**Description**: Deletes a specific task by its ID.
+**Method**: DELETE
+**URL**: /tasks/<id>
+**Example response**:
 
-*Method: DELETE
-*URL: /tasks/<id>
-*Example response:
-
-"json
+```json
 {
     “message": ”Task deleted”
 }
-"
+```
 ## 🧪 Pruebas con Postman
 
-- Configura las siguientes peticiones en Postman:
-- GET /tareas
-- POST /tareas con cuerpo JSON para crear una nueva tarea.
-- PUT /tareas/<id> con cuerpo JSON para actualizar una tarea.
-- DELETE /tareas/<id> para eliminar una tarea.
-- Envía las solicitudes y verifica las respuestas.
+- Configure the following requests in Postman:
+- GET /tasks
+- POST /tasks with JSON body to create a new task.
+- PUT /tasks/<id> with JSON body to update a task.
+- DELETE /tasks/<id> to delete a task.
+- Sends the requests and checks the responses.
